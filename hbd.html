@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#btn2 {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+#btn1 {
+    position: absolute;
+    left: 50px;
+    top: 100px;
+}
+#gambar {
+    position: absolute;
+    left: 150px;
+    top: 50px;
+}
+</style>
+<h1>SELAMAT ULANG TAHUN!!!</h1>
+</head>
+<body>
+    <img id="gambar" src="Cake.jpg" width="200">
+    <h2>Mau Kue?</h2>
+    <button id="btn1">tidak</button>
+
+<button id="btn2" onclick="pindah()">iya</button>
+
+<script>
+function pindah() {
+    let x = Math.random() * (window.innerWidth - 100);
+    let y = Math.random() * (window.innerHeight - 50);
+
+    document.getElementById("btn2").style.left = x + "px";
+    document.getElementById("btn2").style.top = y + "px";
+}
+</script>
+
+</body>
+</html>
